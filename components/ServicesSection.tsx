@@ -63,7 +63,8 @@ const services = [
     icon: TrendingUp,
     packages: [
       {
-        name: "Submit the form for more details."
+        name: "Submit the form for more details.",
+        list: []
       }
     ],
   },
@@ -74,7 +75,8 @@ const services = [
     icon: Globe,
     packages: [
       {
-        name: "Submit the form for more details."
+        name: "Submit the form for more details.",
+        list: []
       }
     ],
   },
@@ -84,7 +86,8 @@ const services = [
       "Custom, responsive, and SEO-optimized websites starting at $599.",
     icon: Laptop,
     packages: [      {
-        name: "Submit the form for more details."
+        name: "Submit the form for more details.",
+        list: []
       }
 ],
   },

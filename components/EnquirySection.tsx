@@ -57,23 +57,33 @@ const EnquirySection: React.FC = () => {
   });
 
   async function onSubmit(userDetails: FormData) {
-    setMessage('Loading...')
+    setMessage("Loading...");
     try {
       const response = await axios.post("/api/contact", userDetails);
-
+  
       if (response.status === 200) {
-        setMessage("We will get back to you soon!")
+        setMessage("We will get back to you soon!");
         console.log("Email sent successfully:", response.data);
       } else {
-        setMessage("Failed! Please directly email or call.")
+        setMessage("Failed! Please directly email or call.");
         console.error("Failed to send email:", response.data);
       }
-    } catch (error: any) {
-      setMessage("Failed! Please directly email or call.")
-      console.error(
-        "Error submitting contact form:",
-        error.response?.data || error.message
-      );
+    } catch (error: unknown) {
+      setMessage("Failed! Please directly email or call.");
+  
+      if (axios.isAxiosError(error)) {
+        // If the error is from Axios, log the response or message
+        console.error(
+          "Error submitting contact form:",
+          error.response?.data || error.message
+        );
+      } else if (error instanceof Error) {
+        // Handle a standard JavaScript Error
+        console.error("Error submitting contact form:", error.message);
+      } else {
+        // Handle unexpected error types
+        console.error("Unexpected error:", error);
+      }
     }
   }
 

@@ -1,16 +1,19 @@
-import nodemailer from 'nodemailer';
-import { NextResponse } from 'next/server';
+import nodemailer from "nodemailer";
+import { NextResponse } from "next/server";
 
 // Load environment variables (Next.js automatically loads `.env.local`)
 export async function POST(req: Request) {
-    console.log(process.env.PORT)
   const body = await req.json();
 
-  const { firstName, lastName, email, phoneNumber, selectedPackage, message } = body;
+  const { firstName, lastName, email, phoneNumber, selectedPackage, message } =
+    body;
 
   if (!firstName || !lastName || !email || !selectedPackage || !message) {
     return NextResponse.json(
-      { error: "All required fields (firstName, lastName, email, selectedPackage, message) must be provided." },
+      {
+        error:
+          "All required fields (firstName, lastName, email, selectedPackage, message) must be provided.",
+      },
       { status: 400 }
     );
   }
@@ -25,8 +28,8 @@ export async function POST(req: Request) {
         user: process.env.EMAIL,
         pass: process.env.PASSWORD,
       },
-    //   logger: true, // Enable debug logs
-    //   debug: true,
+      //   logger: true, // Enable debug logs
+      //   debug: true,
     });
 
     // Email HTML Template
@@ -163,19 +166,25 @@ export async function POST(req: Request) {
     const mailOptions = {
       from: '"GrandFleet" <support@grandfleet.au>', // Sender address
       to: email, // Recipient
-      cc: 'support@grandfleet.com', // CC to support team
-      subject: 'We’ve Received Your Submission', // Subject line
+      cc: "support@grandfleet.com", // CC to support team
+      subject: "We’ve Received Your Submission", // Subject line
       html: emailTemplate, // HTML body
       replyTo: email, // Reply-to address
     };
 
     // Send the email
     const info = await transporter.sendMail(mailOptions);
-    console.log('Contact form email sent:', info.messageId);
+    console.log("Contact form email sent:", info.messageId);
 
-    return NextResponse.json({ message: 'Email sent successfully!' });
-  } catch (error: any) {
-    console.error('Error sending email:', error.message);
-    return NextResponse.json({ error: error.message || 'Unknown error' }, { status: 500 });
+    return NextResponse.json({ message: "Email sent successfully!" });
+  } catch (error: unknown) {
+    let errorMessage = "Unknown error";
+
+    if (error instanceof Error) {
+      errorMessage = error.message;
+    }
+
+    console.error("Error sending email:", errorMessage);
+    return NextResponse.json({ error: errorMessage }, { status: 500 });
   }
 }

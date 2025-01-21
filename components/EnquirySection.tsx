@@ -23,7 +23,6 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { CheckCircle } from "lucide-react";
 import { Card, CardContent, CardTitle } from "./ui/card";
 
 const formSchema = z.object({

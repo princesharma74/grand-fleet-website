@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const HeroSection = () => {
   return (
-    <section className="w-full bg-[url('/hero-background.jpg')] bg-cover bg-center h-full">
+    <section className="w-full bg-[url('https://res.cloudinary.com/dyflt39oq/image/upload/v1737483613/Grandfleet/hero-background_bdnoeb.jpg')] bg-cover bg-center h-full">
       <div className="py-32 lg:py-48 w-full h-full bg-black bg-opacity-30 flex justify-center">
         <div className="container h-full">
           <div className="flex flex-col items-center space-y-4 text-center p-8 md:p-2 w-full">

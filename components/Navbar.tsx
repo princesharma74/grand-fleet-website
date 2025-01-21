@@ -23,7 +23,7 @@ export function Navbar() {
             <Image
               alt="Logo"
               className="rounded-xl object-cover object-center"
-              src="/GrandFleet.png"
+              src="https://res.cloudinary.com/dyflt39oq/image/upload/v1737483608/Grandfleet/GrandFleet_hya5au.png"
               height={10}
               width={50}
             />

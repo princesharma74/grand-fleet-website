@@ -35,7 +35,7 @@ const AboutSection = () => {
             <Image
               alt="About Us"
               className="rounded-xl object-cover object-center"
-              src="/about-image.svg"
+              src="https://res.cloudinary.com/dyflt39oq/image/upload/v1737483608/Grandfleet/about-image_upukgb.svg"
               width={550}
               height={310}
               priority

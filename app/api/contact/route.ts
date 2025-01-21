@@ -1,4 +1,5 @@
 import nodemailer from "nodemailer";
+import SMTPTransport from "nodemailer/lib/smtp-transport";
 import { NextResponse } from "next/server";
 
 // Load environment variables (Next.js automatically loads `.env.local`)
@@ -30,7 +31,7 @@ export async function POST(req: Request) {
       },
       //   logger: true, // Enable debug logs
       //   debug: true,
-    });
+    } as SMTPTransport.Options);
 
     // Email HTML Template
     const emailTemplate = `

@@ -16,7 +16,7 @@ export function Navbar() {
 
   return (
     // <header className="sticky top-0 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 flex items-center justify-center">
-    <header className="sticky top-0 w-full bg-brand_blue text-white flex items-center justify-center">
+    <header className="sticky top-0 w-full bg-brand_blue text-white flex items-center justify-center px-4">
       <div className="container flex h-14 items-center justify-between">
         {/* Logo for Mobile */}
         <Link href="/" className="font-bold md:hidden">
@@ -72,7 +72,7 @@ export function Navbar() {
                   variant="ghost"
                   className="mr-2 px-0 text-base hover:bg-transparent focus-visible:bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0"
                 >
-                  <Menu className="h-6 w-6" />
+                  <Menu width="w-8 h-8"/>
                   <span className="sr-only">Toggle Menu</span>
                 </Button>
               </SheetTrigger>

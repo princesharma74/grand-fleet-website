@@ -94,7 +94,7 @@ const EnquirySection: React.FC = () => {
           <h2 className="text-3xl font-semibold mb-4 text-gray-900">
             Get in touch
           </h2>
-          <div className="flex flex-col gap-2 text-lg text-gray-600 mb-6 leading-relaxed">
+          <div className="flex flex-col gap-2 text-gray-600 mb-6 leading-relaxed">
             <div>
               Are you a car rental business owner or a busy professional
               struggling to manage your fleet?
@@ -123,7 +123,7 @@ const EnquirySection: React.FC = () => {
         <div className="lg:w-2/6 md:w-1/2 rounded-lg flex flex-col md:ml-auto w-full mt-10 md:mt-0">
           <Card className="py-8">
             <CardTitle className="text-gray-900 text-2xl font-semibold title-font mb-5 text-center">
-              Get a Quote
+              Get a quote
             </CardTitle>
             <CardContent>
               <Form {...form}>

@@ -167,7 +167,7 @@ export async function POST(req: Request) {
     const mailOptions = {
       from: '"GrandFleet" <support@grandfleet.au>', // Sender address
       to: email, // Recipient
-      cc: "support@grandfleet.com", // CC to support team
+      cc: "support@grandfleet.au", // CC to support team
       subject: "We’ve Received Your Submission", // Subject line
       html: emailTemplate, // HTML body
       replyTo: email, // Reply-to address

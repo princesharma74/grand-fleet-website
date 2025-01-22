@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3">
           <div className="space-y-3">
             <h3 className="text-lg font-bold">GrandFleet</h3>
-            <p className="text-sm">Expert Solutions for Growing Businesses</p>
+            <p className="text-sm">Expert Solutions for Growing Businesses. Your trusted source for long-term driver leads tailored to your car rental business needs.</p>
           </div>
           <div className="space-y-3">
             <h3 className="text-lg font-bold">Quick Links</h3>

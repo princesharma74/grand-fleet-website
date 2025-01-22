@@ -152,10 +152,6 @@ export async function POST(req: Request) {
         <tr>
           <td class="email-footer">
             <p>&copy; 2025 GrandFleet. All rights reserved.</p>
-            <p>
-              <a href="#">Privacy Policy</a> |
-              <a href="#">Unsubscribe</a>
-            </p>
           </td>
         </tr>
       </table>

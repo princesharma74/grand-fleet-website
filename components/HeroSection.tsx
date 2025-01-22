@@ -16,7 +16,7 @@ const HeroSection = () => {
                 $49/Week
               </h1>
             </div>
-            <p className="mx-auto max-w-[700px] text-white md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+            <p className="mx-auto max-w-[700px] text-white md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed font-semibold">
               Streamline your car rental business and grow online with
               affordable, expert services.
             </p>

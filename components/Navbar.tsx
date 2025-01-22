@@ -60,7 +60,7 @@ export function Navbar() {
         <div className="flex items-center justify-end space-x-2 md:justify-end">
           <div className="w-full flex-1 md:w-auto md:flex-none">
             <Link href={"#contact"} className="bg-brand_orange text-white hover:bg-[#FF8A00]/90 w-full py-2 px-5 rounded-full font-bold">
-            Get a qoute
+            Get a quote
             </Link>
           </div>
           {/* Mobile View - Hamburger and Logo */}

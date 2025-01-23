@@ -17,7 +17,7 @@ const testimonials = [
     author: "Solutiondash Rentals, Dandenong",
   },
   {
-    quote: "rand Fleet has been a game-changer for my car rental business! Their fleet management and driver lead services are top-notch. I’m truly impressed with the quality of their work. Even though they’re a startup, their services are excellent and perfectly tailored for car rental business owners.",
+    quote: "Grand Fleet has been a game-changer for my car rental business! Their fleet management and driver lead services are top-notch. I’m truly impressed with the quality of their work. Even though they’re a startup, their services are excellent and perfectly tailored for car rental business owners.",
     author: "Foton Enterprises",
   }
 ];

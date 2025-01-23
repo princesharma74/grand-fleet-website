@@ -13,20 +13,13 @@ import {
 
 const testimonials = [
   {
-    quote:
-      "GrandFleet transformed our operations, and their website design brought in 40% more bookings!",
-    author: "John D., CarMax Rentals",
+    quote: "Ash has been a tremendous help to me and my car rental company. Her dedication to finding clients and ensuring we stay on top of our game is truly remarkable. She consistently delivers exceptional results and never fails to impress with her professionalism and work ethic. Highly recommend her services!",
+    author: "Solutiondash Rentals, Dandenong",
   },
   {
-    quote:
-      "The customer support management has reduced our costs significantly. Highly recommended!",
-    author: "Sarah L., City Wheels",
-  },
-  {
-    quote:
-      "Their marketing strategies have helped us attract more long-term rental drivers. Great ROI!",
-    author: "Mike R., Express Auto Rentals",
-  },
+    quote: "rand Fleet has been a game-changer for my car rental business! Their fleet management and driver lead services are top-notch. I’m truly impressed with the quality of their work. Even though they’re a startup, their services are excellent and perfectly tailored for car rental business owners.",
+    author: "Foton Enterprises",
+  }
 ];
 
 const TestimonialsSection = () => {

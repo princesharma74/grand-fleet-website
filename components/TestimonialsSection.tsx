@@ -29,9 +29,8 @@ const TestimonialsSection = () => {
 
   return (
 
-<section id="testimonials" className="bg-white px-6 py-24 sm:py-32 lg:px-8 mt-16 -z-10">
-  <div className="bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),white)] opacity-20"></div>
-  <div className="right-1/2 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center"></div>
+<section id="testimonials" className="w-full bg-white px-6 py-24 sm:py-32 lg:px-8 -z-10">
+        <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center text-[#1A1919]">Testimonials</h2>
   <div className="mx-auto max-w-2xl lg:max-w-4xl">
     <Carousel
       plugins={[plugin.current]}

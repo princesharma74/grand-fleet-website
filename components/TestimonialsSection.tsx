@@ -19,6 +19,10 @@ const testimonials = [
   {
     quote: "Grand Fleet has been a game-changer for my car rental business! Their fleet management and driver lead services are top-notch. I’m truly impressed with the quality of their work. Even though they’re a startup, their services are excellent and perfectly tailored for car rental business owners.",
     author: "Foton Enterprises",
+  },
+  {
+    quote: "GrandFleet has been a game-changer for our business. Their experience in the car rental industry has made things so much easier for us, especially when it comes to managing tolls and payments. On top of that, their pricing is much more affordable. We also got our booking website done through them, and the whole process was smooth though it took around 3 weeks but we were satisfied. Honestly, when we first approached them, they were just starting out, and we weren’t sure what to expect. But looking back, it was one of the best decisions we made. Highly recommend their services!",
+    author: "Veera Rentals",
   }
 ];
 
